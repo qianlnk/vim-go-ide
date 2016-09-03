@@ -22,6 +22,11 @@ Remember that your system's Vim config files remain untouched? During installati
 
     vim -u ~/.vimrc.go
 
+Install pathogen if you receive message "Unknown function: pathogen#infect"
+
+    mkdir -p ~/.vim/autoload ~/.vim/bundle && \
+    curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
+
 And btw, nothing prevents you from creation of a handy alias in your `.zshrc`:
 
     alias vimgo='vim -u ~/.vimrc.go'
